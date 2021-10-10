@@ -1,7 +1,12 @@
 
-let count=0
+let countEl= document.getElementById('count-el');
+count=countEl.innerText
 
 function increment () {
     count++
-    document.getElementById('count-el').innerText = count
+    countEl.innerText = count
+}
+
+function save() {
+    console.log(count);
 }
