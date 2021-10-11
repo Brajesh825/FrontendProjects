@@ -16,17 +16,17 @@ let sumEl=document.getElementById('sum-el')
 
 function sum(){
     let sum= num1+num2;
-    sumEl.textContent=sum
+    sumEl.textContent="Sum: "+sum
 }
 function sub(){
     let sub= num1-num2;
-    sumEl.textContent=sub
+    sumEl.textContent="Sub: "+sub
 }
 function div(){
     let div= num1/num2;
-    sumEl.textContent=div
+    sumEl.textContent="Div: "+div
 }
 function mul(){
     let mul= num1*num2;
-    sumEl.textContent=mul
+    sumEl.textContent="Mult: "+mul
 }
