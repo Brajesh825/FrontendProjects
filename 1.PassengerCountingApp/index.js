@@ -2,15 +2,20 @@
 let saveEl = document.getElementById('save-el')
 let countEl= document.getElementById('count-el');
 
-count=countEl.innerText
+let count=0
+
 function increment () {
     count++
-    countEl.innerText = count
+    countEl.textContent = count
 }
-
 function save() {
-    let saved = saveEl.innerText
-    saved+= " " + count
-    saveEl.innerText = saved
-    console.log(count);
+    let countStr = saveEl.textContent
+    countStr+= " " + count
+
+    saveEl.textContent = countStr
+    reset()
+}
+function reset() {
+    count=0
+    countEl.textContent=0
 }
