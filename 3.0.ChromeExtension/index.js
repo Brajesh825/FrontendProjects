@@ -1,6 +1,6 @@
 
 // Array to store the data
-let myLeads = ["a","b"]
+let myLeads = []
 
 //Query Selectors
 const inputBtn = document.getElementById('input-btn')
@@ -11,12 +11,20 @@ const ulEl = document.getElementById('ul-el')
 inputBtn.addEventListener("click", function(){
     // Getting Value from input element directly
     let lead = inputEl.value
+    inputEl.value=""
     myLeads.push(lead)
+    renderLeads()
 })
 
-let ListItems=""
-for (let index = 0; index < myLeads.length; index++) {
-    ListItems+=`<li> ${myLeads[index]} </li>`
+function renderLeads(){
+    let listItems=""
+    for (let index = 0; index < myLeads.length; index++) {
+        listItems+=
+            `<li>
+                <a href="${myLeads[index]}" target="_blank"> ${myLeads[index]} </a>
+            </li>`
+    }
+    ulEl.innerHTML=listItems
 }
 
-ulEl.innerHTML=ListItems
+
