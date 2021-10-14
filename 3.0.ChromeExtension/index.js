@@ -1,24 +1,27 @@
 // Array To Store The Data
 let myLeads = []
 
+// Getting Data From LocalStorage And Pushing Into Array
+let leadFromLocalStorage= JSON.parse(localStorage.getItem("myleads"))
+
 //Query Selectors
 const inputBtn = document.getElementById('input-btn')
 const inputEl = document.getElementById('input-el')
 const ulEl = document.getElementById('ul-el')
 
-//Local Storage Handle
-function populate() {
-    for (let index = 0; index < localStorage.length; index++) {
-        myLeads.push(localStorage.getItem(`myLeads:${index}`))
-    }    
+//Initialiser
+if(lead){
+    myLeads=leadFromLocalStorage
+    renderLeads()
 }
 
 //Event Listeners
 inputBtn.addEventListener("click", function(){
 // Getting Value from input element directly
-    let lead = inputEl.value
+    myLeads.push(inputEl.value)
     inputEl.value=""
-    myLeads.push(lead)
+// Saving myLeads array to local storage after converting to string
+    localStorage.setItem("myleads",JSON.stringify(myLeads))
     renderLeads()
 })
 
@@ -30,11 +33,6 @@ function renderLeads(){
             `<li>
                 <a href="${myLeads[index]}" target="_blank"> ${myLeads[index]} </a>
             </li>`
-            localStorage.setItem(`myLeads:${index}`,myLeads[index])
     }
     ulEl.innerHTML=listItems
 }
-
-// Initialisers
-populate()
-renderLeads()
