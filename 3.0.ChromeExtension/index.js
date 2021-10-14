@@ -8,9 +8,10 @@ let leadFromLocalStorage= JSON.parse(localStorage.getItem("myleads"))
 const inputBtn = document.getElementById('input-btn')
 const inputEl = document.getElementById('input-el')
 const ulEl = document.getElementById('ul-el')
+const deleteAllBtn = document.getElementById('delete-all-btn')
 
 //Initialiser
-if(lead){
+if(leadFromLocalStorage){
     myLeads=leadFromLocalStorage
     renderLeads()
 }
@@ -22,6 +23,11 @@ inputBtn.addEventListener("click", function(){
     inputEl.value=""
 // Saving myLeads array to local storage after converting to string
     localStorage.setItem("myleads",JSON.stringify(myLeads))
+    renderLeads()
+})
+deleteAllBtn.addEventListener("dblclick",function(){
+    localStorage.clear()
+    myLeads=[]
     renderLeads()
 })
 
