@@ -59,22 +59,22 @@ Global Styles
 ===============
 */
 
-*,
-::after,
-::before {
+*,::after,::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 body {
   font-family: var(--ff-secondary);
   background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
-  font-size: 0.875rem;
 }
-ul {
+ul{
   list-style-type: none;
+}
+a{
+  text-decoration: none;
 }
 a {
   text-decoration: none;
@@ -128,29 +128,6 @@ p {
     line-height: 1;
   }
 }
-/*  global classes */
-
-/* section */
-.section {
-  padding: 5rem 0;
-}
-
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
-main {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-}
-
 /*
 =============== 
 Navbar
@@ -176,7 +153,7 @@ nav {
 }
 .nav-toggle:hover {
   color: var(--clr-primary-1);
-  transform: rotate(90deg);
+  transform: rotate(450deg);
 }
 .logo {
   height: 40px;
@@ -198,7 +175,7 @@ nav {
 .social-icons {
   display: none;
 }
-.links {
+.links{
   height: 0;
   overflow: hidden;
   transition: var(--transition);
