@@ -4,13 +4,11 @@ const questions = document.querySelectorAll('.question')
 questions.forEach(function(element){
     const btn = element.querySelector('.question-btn')
     btn.addEventListener('click',function(){
-        
         questions.forEach(function(item){
             if(item!=element){
                 item.classList.remove('show-text')
             }
         })
-
         element.classList.toggle('show-text')
     })
 })
