@@ -185,6 +185,7 @@ Menu
   background: var(--clr-gold);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
 }
 .btn-container {
   margin-bottom: 4rem;
