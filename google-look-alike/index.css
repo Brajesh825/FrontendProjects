@@ -1,0 +1,125 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 16px;
+}
+
+nav{
+    text-align: right;
+}
+
+.menu-item{
+    font-size: 13px;
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+    position: relative;
+    top: -11px;
+    left: -6px;
+    margin-right: 16px;
+}
+nav .material-icons{
+    position: relative;
+    top: -3px;
+    left: -5px;
+    margin-right: 13px;
+}
+.menu-item:hover{
+    text-decoration: underline;
+}
+#profile-pic{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+section{
+    text-align: center;
+    padding-top: 11%;
+}
+#input-wrapper{
+    position: relative;
+    width: 550px;
+    display: inline-block;
+}
+
+#search-box{
+    color: #222;
+    width: 100%;
+    border: 1px solid #3de1e5;
+    font-size: 13px;
+    padding: 14px;
+    border-radius: 24px;
+    outline: none;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+#search-box:hover,#search-box:focus{ 
+    box-shadow: 0 1px 6px 0 rgba(3,33,36,0.28);
+    border-color: rgba(223,225,229,0) ;
+}
+
+#input-wrapper .voice-icon{
+    position: absolute;
+    right: -10px;
+    top: 34px;
+}
+
+.custom-btns{
+    background-color: #f2f2f2;
+    color: #5f6368;
+    font-size: 14px;
+    height: 36px;
+    padding: 0 16px;
+    background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+    border: 1px solid transparent;
+    box-shadow: 0 1px 1px rgba(0,0,0,0);
+    color: #222;
+}
+
+.custom-btns:hover{
+    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+.custom-btns:first-of-type{
+    margin-right: 14px;
+}
+
+#app-dropdown{
+    width:285px;
+    padding: 28px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    position: absolute;
+    right: 100px;
+    display: none;
+}
+#dropdown-wrapper{
+    display: inline-block;
+}
+
+#dropdown-wrapper:hover #app-dropdown{
+    display: block;
+}
+
+.app-item{
+    display: inline-block;
+    width: 84px;
+    margin-bottom: 18px;
+    padding: 8px 2px;
+    text-align: center;
+}
+.app-item:hover{
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+.app-item img{
+    width: 50px;
+    height: 50px;
+}
+.app-item > p{
+    color: rgba(0,0,0,0.87);
+    margin: 0;
+    padding-top: 8px;
+}
