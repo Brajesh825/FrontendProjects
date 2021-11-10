@@ -1,0 +1,115 @@
+
+section{
+    background-color: #f2fbf9;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.para{
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.para p{
+    width:700px;
+    font-size: 22px;
+    text-align: center;
+}
+.FemcareFertility{
+    width:70vw;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.heading{
+    text-align: center;
+    color:#00837b;
+    font-size: 35px;
+}
+.container{
+    display: flex;
+}
+.box{
+    display: flex;
+    width:50%;
+    padding:25px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.box img{
+    border-radius: 50%;
+
+}
+.box p{
+    padding:20px;
+    font-size: 20px;
+}
+.box1{
+    border-right:1px solid #000;
+    border-bottom: 1px solid #000;
+
+}
+.box2{
+    border-bottom: 1px solid #000;
+}
+.box3{
+    border-right:1px solid #000;
+}
+.subHeading{
+    text-align: center;
+    color:#00837b;
+    font-size: 35px;
+    padding: 25px;
+}
+.arrow{
+    margin:25px;
+    font-size: 35px;
+    height:280px;
+    color:#00837b;
+    padding:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width:168px;
+    height:330px;
+    font-size: 18px;
+    padding:25px;
+    background-color: #fff;
+    border:1px solid #d0d0d0;
+    border-radius:10px;
+    box-shadow: 3px 3px 3px #d0d0d0;
+    color:#838383;
+    margin:25px 10px;
+}
+.cardDesc{
+    margin-top: 50px;
+    display: flex;
+
+}
+.cardDesc img{
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.cardDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name{
+    color:#000;
+}
+.date{
+    font-size: 14px;
+}
+.fa-star{
+    color:gold;
+    font-size: 14px;
+}

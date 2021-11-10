@@ -1,0 +1,52 @@
+.header{
+    &__venue{
+        padding: 0.1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: #00837b;
+    }
+    &__item{
+        margin: 0.5rem;
+        font-size: 1.125rem;
+        &:last-child{
+            margin-right: 3rem;
+        }
+        a{
+            color:#ffffff;
+        }
+    }
+    &__content{
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        background: #fff;
+    }
+    &__logo{
+        display: flex;
+        margin-left: 1rem;
+    }
+    &__image{
+        max-width: 7rem;
+    }
+    &__text{
+        position: relative;
+        align-self: center;
+        right: 1.125rem;
+    }
+    &__button{
+            margin-right: 2rem;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            a{
+                width: 13rem;
+                font-size: 1.5rem;
+                font-weight: 300;
+                background: #00837b;
+                color: #ffffff;
+                border-radius: 0.25rem;
+                padding: 0.5rem;
+            }
+    }
+}
