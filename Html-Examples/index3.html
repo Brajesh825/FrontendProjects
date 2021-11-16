@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .A{
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .B{
+            background-color: white;
+            width: 50vw;
+            height: 50vh;
+        }
+        .C{
+            padding: 1rem;
+            display:flex ;
+            flex-direction: row;
+            background: blue;
+            justify-content: space-between;
+        }
+        .D{
+            padding-left: 50px;
+        }
+        .E{
+            padding-right: 50px;
+        }
+        .btn{
+            justify-content: center;
+        }
+        .submit__btn{
+            width: 100px;
+            height: 25px;
+            border-radius: 10px;
+        }
+    </style>
+<body>
+    <div class="A">
+        <div class="B">
+            <div class="C">
+                <div class="D">Email</div>
+                <input class="E">
+            </div>
+            <div class="C">
+                <div class="D">Password</div>
+                <input class="E">
+            </div>
+            <div class="C btn">
+                <button type="submit" class="submit__btn">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

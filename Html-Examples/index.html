@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            background: rgb(210, 210, 219);
+            width: 100vw;
+        }
+        .container{
+            background: rgb(210, 210, 219);
+            width: 100vw;
+            height: 96vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .membrane{
+            border-radius: 10px;
+            background: blue;
+            height: 200px;
+        }
+        .form__title{
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            border-top: 1px solid black;
+        }
+        .form{
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(74, 110, 230);
+            color: black;
+            font-size: 1.5rem;
+            justify-content: center;
+        }
+        .form__item{
+            display: flex;
+            justify-content: space-between; 
+            padding: 1.0rem;
+        }
+        .form__item input{
+            margin-left: 5px;
+            border-radius: 10px;
+            width: 225px;
+        }
+        .btn{
+            border-radius: 10px;
+            background: white;
+            color: rgb(144, 147, 151);
+            font-size: 1.125rem;
+            width: 100px;
+        }
+        .form__button{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <h1>Registration Page</h1>
+    </div>
+    <div class="container" >
+        <div class="membrane">
+            <div class="form__title">
+                <h1>Login for html:</h1>
+            </div>
+            <div class="form">
+                <div class="form__item">
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="form__item">
+                    <label for="password">Password</label>
+                    <input type="text" id="password">
+                </div>
+                <div class="form__item form__button">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
