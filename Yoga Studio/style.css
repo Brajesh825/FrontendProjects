@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald';
+  line-height: 1.2;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 1.15rem;
+}
+
+.header .header__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.header .header__content img {
+  width: 64px;
+  height: 32px;
+  padding-left: 0.425rem;
+}
+.header .header__content i {
+  font-size: 1.3rem;
+  padding-right: 0.425rem;
+  padding-top: 0.425rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.yoga__studio {
+  display: flex;
+  flex-direction: row;
+  background-color: pink;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 160, 179);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 160, 179, 1) 0%,
+    rgba(255, 121, 213, 1) 25%,
+    rgba(235, 94, 238, 1) 50%,
+    rgba(218, 98, 241, 1) 75%,
+    rgba(142, 95, 247, 1) 100%
+  );
+}
+
+.yoga__studio .yoga__studio__desc {
+  width: 30vw;
+  height: 60vh;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  color: white;
+  margin: 1rem;
+}
+
+.yoga__studio .yoga__studio__desc h1 {
+  font-size: 4.5rem;
+  font-weight: 100;
+}
+
+.yoga__studio .yoga__studio__desc .stripe {
+  width: 100%;
+  background: white;
+  height: 0.475rem;
+  display: block;
+  margin: 1.725rem 0;
+}
+.yoga__studio .yoga__studio__desc p {
+  font-size: 1.125rem;
+  margin-top: 1.725rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.yoga__studio .yoga__studio__image__comtainer {
+  width: 35vw;
+  height: 65vh;
+  margin-top: 15vh;
+}
+
+.yoga__studio .yoga__studio__image__comtainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  width: 10.5rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.learn__more {
+  border: 2px solid white;
+  border-radius: 2rem;
+  background-color: transparent;
+  color: white;
+}
