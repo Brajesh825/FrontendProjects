@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Oswald';
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.2;
+}
+h1 {
+  font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -15,7 +20,7 @@ body {
   padding: 1.15rem;
 }
 
-.header .header__content {
+.header__content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -23,12 +28,12 @@ body {
   margin-right: 10vw;
 }
 
-.header .header__content img {
+.header__content img {
   width: 64px;
   height: 32px;
   padding-left: 0.425rem;
 }
-.header .header__content i {
+.header__content i {
   font-size: 1.3rem;
   padding-right: 0.425rem;
   padding-top: 0.425rem;
@@ -45,18 +50,10 @@ body {
   background-color: pink;
   justify-content: center;
   align-items: center;
-  background: rgb(255, 160, 179);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 160, 179, 1) 0%,
-    rgba(255, 121, 213, 1) 25%,
-    rgba(235, 94, 238, 1) 50%,
-    rgba(218, 98, 241, 1) 75%,
-    rgba(142, 95, 247, 1) 100%
-  );
+  background: url('./image/bg.jpg');
 }
 
-.yoga__studio .yoga__studio__desc {
+.yoga__studio__desc {
   width: 30vw;
   height: 50vh;
   padding-top: 4rem;
@@ -65,48 +62,46 @@ body {
   margin: 1rem;
 }
 
-.yoga__studio .yoga__studio__desc h1 {
+.yoga__studio__desc h1 {
   font-size: 4.5rem;
   font-weight: 100;
 }
 
-.yoga__studio .yoga__studio__desc .stripe {
+.yoga__studio__desc .stripe {
   width: 100%;
   background: white;
   height: 0.475rem;
   display: block;
   margin: 1.725rem 0;
 }
-.yoga__studio .yoga__studio__desc p {
+.yoga__studio__desc p {
   font-size: 1.125rem;
   margin-top: 1.725rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.4;
 }
 
-.yoga__studio .yoga__studio__image__comtainer {
+.yoga__studio__image__comtainer {
   width: 400px;
   height: 55vh;
   margin-top: 15vh;
 }
 
-.yoga__studio .yoga__studio__image__comtainer img {
+.yoga__studio__image__comtainer img {
   width: 100%;
   height: 100%;
 }
 
 @media screen and (max-width: 1200px) {
-  .yoga__studio .yoga__studio__desc {
+  .yoga__studio__desc {
     width: 40vw;
     padding-top: 1rem;
     padding-bottom: 3rem;
   }
-  .yoga__studio .yoga__studio__desc h1 {
+  .yoga__studio__desc h1 {
     font-size: 3rem;
     font-weight: 100;
   }
-  .yoga__studio .yoga__studio__desc p {
+  .yoga__studio__desc p {
     font-size: 1rem;
     margin-top: 1.725rem;
   }
@@ -116,21 +111,21 @@ body {
     flex-direction: column;
     height: fit-content;
   }
-  .yoga__studio .yoga__studio__desc {
+  .yoga__studio__desc {
     width: 80vw;
     padding-top: 2rem;
     padding-bottom: 0.5rem;
     height: auto;
   }
-  .yoga__studio .yoga__studio__image__comtainer {
+  .yoga__studio__image__comtainer {
     width: 70vw;
     margin-top: 0;
   }
 }
 
 .btn {
-  width: 10.5rem;
-  height: 3rem;
+  width: 12.5rem;
+  height: 3.5rem;
   font-size: 1rem;
   font-weight: bold;
   margin-top: 1.5rem;
@@ -146,7 +141,7 @@ body {
   background-color: #292d33;
 }
 
-.utilities .utilities__list {
+.utilities__list {
   width: 70vw;
   margin: auto;
   box-sizing: content-box;
@@ -158,36 +153,44 @@ body {
   grid-gap: 2rem;
 }
 
-.utilities .utilities__list .utilities__item {
+.utilities__item {
   background-color: white;
   border-radius: 1rem;
 }
 @media screen and (max-width: 1200px) {
-  .utilities .utilities__list {
+  .utilities__list {
     grid-template-columns: repeat(2, 34vw);
   }
 }
 @media screen and (max-width: 680px) {
-  .utilities .utilities__list {
+  .utilities__list {
     grid-template-columns: repeat(1, 66vw);
   }
 }
-.utilities .utilities__list .utilities__item {
+.utilities__item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.utilities .utilities__list .utilities__item .utilities__item__container {
+.utilities__item__container {
   margin-top: 3rem;
 }
-.utilities .utilities__list .utilities__item .utilities__item__container img {
-  width: 6rem;
+.utilities__item__container__svg {
+  width: 5rem;
+  height: 5rem;
+  background: #9b56fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  height: 6rem;
-  background-color: rgb(229, 229, 240);
 }
-.utilities .utilities__list .utilities__item .utilities__item__container h2 {
+.utilities__item__container object {
+  background-color: #9b56fc;
+}
+
+.utilities__item__container h2 {
   margin-top: 1rem;
   text-align: center;
+  font-weight: normal;
 }
