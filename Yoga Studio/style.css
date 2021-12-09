@@ -43,7 +43,6 @@ body {
   display: flex;
   flex-direction: row;
   background-color: pink;
-  height: 80vh;
   justify-content: center;
   align-items: center;
   background: rgb(255, 160, 179);
@@ -59,9 +58,9 @@ body {
 
 .yoga__studio .yoga__studio__desc {
   width: 30vw;
-  height: 60vh;
-  padding-top: 7rem;
-  padding-bottom: 5rem;
+  height: 50vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   color: white;
   margin: 1rem;
 }
@@ -83,17 +82,50 @@ body {
   margin-top: 1.725rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.4;
 }
 
 .yoga__studio .yoga__studio__image__comtainer {
-  width: 35vw;
-  height: 65vh;
+  width: 400px;
+  height: 55vh;
   margin-top: 15vh;
 }
 
 .yoga__studio .yoga__studio__image__comtainer img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .yoga__studio .yoga__studio__desc {
+    width: 40vw;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  .yoga__studio .yoga__studio__desc h1 {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+  .yoga__studio .yoga__studio__desc p {
+    font-size: 1rem;
+    margin-top: 1.725rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  .yoga__studio {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .yoga__studio .yoga__studio__desc {
+    width: 80vw;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    height: auto;
+  }
+  .yoga__studio .yoga__studio__image__comtainer {
+    width: 70vw;
+    margin-top: 0;
+  }
 }
 
 .btn {
@@ -108,4 +140,54 @@ body {
   border-radius: 2rem;
   background-color: transparent;
   color: white;
+}
+
+.utilities {
+  background-color: #292d33;
+}
+
+.utilities .utilities__list {
+  width: 70vw;
+  margin: auto;
+  box-sizing: content-box;
+  position: relative;
+  top: -4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 16vw);
+  grid-auto-rows: 15rem;
+  grid-gap: 2rem;
+}
+
+.utilities .utilities__list .utilities__item {
+  background-color: white;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 1200px) {
+  .utilities .utilities__list {
+    grid-template-columns: repeat(2, 34vw);
+  }
+}
+@media screen and (max-width: 680px) {
+  .utilities .utilities__list {
+    grid-template-columns: repeat(1, 66vw);
+  }
+}
+.utilities .utilities__list .utilities__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.utilities .utilities__list .utilities__item .utilities__item__container {
+  margin-top: 3rem;
+}
+.utilities .utilities__list .utilities__item .utilities__item__container img {
+  width: 6rem;
+  border-radius: 50%;
+  height: 6rem;
+  background-color: rgb(229, 229, 240);
+}
+.utilities .utilities__list .utilities__item .utilities__item__container h2 {
+  margin-top: 1rem;
+  text-align: center;
 }
