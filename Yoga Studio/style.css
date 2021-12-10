@@ -73,7 +73,7 @@ body {
   font-weight: 100;
 }
 
-.yoga__studio__desc .stripe {
+.stripe {
   width: 100%;
   background: white;
   height: 0.475rem;
@@ -274,13 +274,13 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 70vw;
+  width: 80vw;
 }
 
 .moto__image {
   margin-top: 4rem;
   margin-bottom: 4rem;
-  width: 690px;
+  width: 750px;
   height: 499px;
   background: url('./image/moto_image.jpg');
   background-size: cover;
@@ -306,11 +306,12 @@ body {
 @media screen and (max-width: 1080px) {
   .moto__container {
     flex-direction: column;
-    width: 80vw;
+    width: 90vw;
+    margin-bottom: -7rem;
   }
   .moto__image {
-    width: 80vw;
-    height: 40vh;
+    width: 90vw;
+    height: 50vh;
   }
   .moto__text {
     width: 68vw;
@@ -321,13 +322,13 @@ body {
     padding: 2rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 580px) {
   .moto__container {
     flex-direction: column;
-    width: 90vw;
+    width: 95vw;
   }
   .moto__image {
-    width: 90vw;
+    width: 95vw;
     height: 45vh;
   }
   .moto__text {
@@ -337,5 +338,78 @@ body {
     left: 0;
     top: -10rem;
     padding: 2rem;
+  }
+}
+
+.personal__training {
+  display: flex;
+  flex-direction: row;
+  background-color: pink;
+  justify-content: center;
+  align-items: center;
+  background: url('./image/background-2.jpg');
+  padding-left: 5rem;
+}
+
+.personal__training__desc {
+  width: 45vw;
+  color: white;
+  padding-left: 12vw;
+}
+
+.personal__training__desc h1 {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.personal__training__desc p {
+  font-size: 1.125rem;
+  margin-top: 1.725rem;
+  line-height: 1.4;
+}
+
+.personal__training__image__comtainer {
+  width: 50vw;
+  margin-top: auto;
+  height: 100%;
+}
+
+.personal__training__image__comtainer img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .personal__training__desc {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 2vw;
+  }
+  .personal__training__desc h1 {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+  .personal__training__desc p {
+    font-size: 1rem;
+    margin-top: 1.725rem;
+  }
+  .personal__training__image__comtainer {
+    width: 55vw;
+  }
+}
+@media screen and (max-width: 780px) {
+  .personal__training {
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .personal__training__desc {
+    width: 80vw;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    height: auto;
+  }
+  .personal__training__image__comtainer {
+    width: 100vw;
+    margin-top: 0;
   }
 }
