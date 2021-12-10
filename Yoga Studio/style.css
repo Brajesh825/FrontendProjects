@@ -11,6 +11,12 @@ h1 {
   font-family: 'Oswald', sans-serif;
 }
 
+h3,
+h4,
+h5 {
+  font-family: 'Oswald', sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -193,4 +199,143 @@ body {
   margin-top: 1rem;
   text-align: center;
   font-weight: normal;
+}
+
+.aboutus {
+  background-color: #ee0073;
+}
+
+.aboutus__container {
+  width: 60vw;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: repeat(3, 18vw);
+  grid-auto-rows: auto;
+  grid-gap: 4rem;
+}
+.aboutus__item {
+  color: white;
+}
+.aboutus__item p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.aboutus__item h3 {
+  font-size: 42px;
+}
+.aboutus__item h4 {
+  font-size: 32px;
+}
+.aboutus__item h5 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutus__container {
+    width: 66vw;
+    grid-gap: 3rem;
+  }
+  .aboutus__item h3 {
+    font-size: 38px;
+  }
+  .aboutus__item h4 {
+    font-size: 28px;
+  }
+  .aboutus__item h5 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .aboutus__container {
+    width: 70vw;
+    grid-template-columns: repeat(1, 66vw);
+    grid-gap: 1.5rem;
+  }
+  .aboutus__item h3 {
+    font-size: 1.8rem;
+  }
+  .aboutus__item h4 {
+    font-size: 1.125rem;
+  }
+}
+.moto {
+  background-color: #292d33;
+}
+
+.moto__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 70vw;
+}
+
+.moto__image {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 690px;
+  height: 499px;
+  background: url('./image/moto_image.jpg');
+  background-size: cover;
+}
+.moto__text {
+  width: 555px;
+  height: 359px;
+  background-color: #e43b76;
+  color: white;
+  padding: 4rem;
+  position: relative;
+  left: -100px;
+}
+.moto__text span {
+  display: block;
+  width: 6rem;
+  height: 0.25rem;
+  background-color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .moto__container {
+    flex-direction: column;
+    width: 80vw;
+  }
+  .moto__image {
+    width: 80vw;
+    height: 40vh;
+  }
+  .moto__text {
+    width: 68vw;
+    height: auto;
+    margin: auto;
+    left: 0;
+    top: -10rem;
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .moto__container {
+    flex-direction: column;
+    width: 90vw;
+  }
+  .moto__image {
+    width: 90vw;
+    height: 45vh;
+  }
+  .moto__text {
+    width: 78vw;
+    height: auto;
+    margin: auto;
+    left: 0;
+    top: -10rem;
+    padding: 2rem;
+  }
 }
