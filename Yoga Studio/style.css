@@ -349,6 +349,7 @@ body {
   align-items: center;
   background: url('./image/background-2.jpg');
   padding-left: 5rem;
+  padding-top: 3rem;
 }
 
 .personal__training__desc {
@@ -412,4 +413,99 @@ body {
     width: 100vw;
     margin-top: 0;
   }
+}
+
+.startnow {
+  background: #292c33;
+}
+
+.startnow__header {
+  margin: auto;
+  width: 80vw;
+  text-align: center;
+  color: white;
+  padding: 4rem 0;
+}
+.startnow__header h1 {
+  padding: 1rem;
+  font-size: 2.15rem;
+}
+.startnow__header p {
+  margin: auto;
+  width: 40rem;
+  line-height: 1.4;
+  font-size: 1.15rem;
+}
+
+.startnow__container {
+  width: 66vw;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: repeat(3, 22vw);
+  grid-auto-rows: 60vh;
+  grid-gap: 0;
+}
+
+.startnow__image {
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.startnow__image_img1 {
+  background: url('./image/sport__image__1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.startnow__image_img2 {
+  background: url('./image/sport__image__2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.startnow__sports {
+}
+
+@media screen and (max-width: 1200px) {
+  .startnow__container {
+    width: 80vw;
+    grid-template-columns: repeat(2, 40vw);
+  }
+  .startnow__image_img2 {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 780px) {
+  .startnow__header p {
+    width: 80vw;
+  }
+
+  .startnow__container {
+    width: 90vw;
+    grid-template-columns: repeat(1, 90vw);
+  }
+  .startnow__image_img2 {
+    width: 90vw;
+    height: 60vh;
+  }
+}
+.startnow__sports {
+  padding: 2rem;
+  background: #ee0073;
+  color: white;
+}
+.startnow__element {
+}
+
+.startnow__element h3 {
+  margin: 1.5rem 0;
+  font-size: 24px;
+}
+
+.startnow__element li {
+  padding: 0.25rem;
+  margin-left: 1.25rem;
+  font-size: 16px;
 }
