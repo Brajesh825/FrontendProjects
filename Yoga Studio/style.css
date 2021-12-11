@@ -464,14 +464,30 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .startnow__sports {
+  padding: 2rem;
+  background: #ee0073;
+  color: white;
+}
+
+.startnow__element h3 {
+  margin: 1.5rem 0;
+  font-size: 24px;
+}
+
+.startnow__element li {
+  padding: 0.25rem;
+  margin-left: 1.25rem;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1200px) {
   .startnow__container {
     width: 80vw;
     grid-template-columns: repeat(2, 40vw);
+  }
+  .startnow__sports {
+    overflow: overlay;
   }
   .startnow__image_img2 {
     width: 80vw;
@@ -491,21 +507,83 @@ body {
     height: 60vh;
   }
 }
-.startnow__sports {
+
+.functional__training {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background: url('./image/background-2.jpg');
+  height: 64vh;
+}
+
+.functional__training__image {
+  width: 30vw;
+  height: 64vh;
+  background: url('./image/functional__training.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.functional__training__details {
   padding: 2rem;
-  background: #ee0073;
+  width: 30vw;
+  height: auto;
   color: white;
 }
-.startnow__element {
+.functional__training__details h1 {
+  font-size: 4.5rem;
+  font-weight: 100;
+}
+.functional__training__details p {
+  font-size: 1.125rem;
+  margin-top: 1.725rem;
+  line-height: 1.4;
 }
 
-.startnow__element h3 {
-  margin: 1.5rem 0;
-  font-size: 24px;
+@media screen and (max-width: 1200px) {
+  .functional__training__image {
+    width: 45vw;
+  }
+
+  .functional__training__details {
+    width: 40vw;
+  }
+  .functional__training__details h1 {
+    font-size: 4rem;
+  }
 }
 
-.startnow__element li {
-  padding: 0.25rem;
-  margin-left: 1.25rem;
-  font-size: 16px;
+@media screen and (max-width: 825px) {
+  .functional__training {
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+  .functional__training__image {
+    width: 80vw;
+  }
+
+  .functional__training__details {
+    width: 90vw;
+  }
+  .functional__training__details h1 {
+    font-size: 3.5rem;
+  }
+  .functional__training__details p {
+    font-size: 1rem;
+    margin-top: 1.245rem;
+  }
+}
+@media screen and (max-width: 580px) {
+  .functional__training__details {
+    width: 96vw;
+  }
+  .functional__training__image {
+    width: 100vw;
+    background-size: cover;
+  }
+  .functional__training__details h1 {
+    font-size: 3rem;
+  }
 }
