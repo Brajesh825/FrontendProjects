@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Getting Clients IP</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+
+    <div id="main">
+
+    </div>
+    <script>
+        const main = document.getElementById('main')
+
+        let getIP = async() => {
+            let data = await fetch('https://api.ipify.org?format=json')
+                .then(data => {
+                    return data.json();
+                })
+            data = getLocation(data.ip)
+            return data;
+        }
+        let getLocation = async(ip) => {
+            const data = await fetch('https://ipapi.co/' + ip + '/json')
+                .then(data => {
+                    return data.json();
+                    console.log(data);
+                })
+            return data;
+        }
+        getIP().then(data => {
+            for (const property in data) {
+                console.log(`${property}: ${data[property]}`);
+                main.innerHTML += `<div>${property}: ${data[property]}</div>`
+
+            }
+        })
+    </script>
+</body>
+
+</html>
